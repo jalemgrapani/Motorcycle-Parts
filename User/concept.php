@@ -5,9 +5,31 @@
   <meta charset="UTF-8">
   <title>Concepts</title>
   <link rel="stylesheet" href="../css/concept.css">
+
+  <style>
+    .logout-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ff4d4d;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logout-btn:hover {
+      background-color: #cc0000;
+    }
+  </style>
 </head>
 
 <body>
+
+  <!-- Logout Button -->
+  <a href="../logout.php" class="logout-btn">Logout</a>
+
   <div id="modelPage" class="container">
 
     <h1>Conceptz.</h1>
