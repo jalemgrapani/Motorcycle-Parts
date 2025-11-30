@@ -1,0 +1,29 @@
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .login-box {
+            width: 350px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .login-box h2 {
+            font-weight: bold;
+        }
+
+        .login-box input {
+            height: 45px;
+        }
+
+        .login-box a {
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+        
+  

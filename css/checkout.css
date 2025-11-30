@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #16316c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f3f7;
+}
+
+.btn-payment {
+    background: linear-gradient(90deg, #1e3a8a, #3b6ed4);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-payment:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.checkout-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-summary h4 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+/* Full-screen overlay for modals */
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+    z-index:1050;
+    overflow:auto;
+}
+
+/* Box modal for all modals */
+.modal-dialog-box {
+    width: 400px;
+    margin: 10% auto;
+}
+
+/* Modal content */
+.modal-content-box {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h5 {
+    color: #1e3a8a;
+    margin: 0;
+}
+
+.modal-header .btn-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1e3a8a;
+}
+
+.modal-body button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1e3a8a, #3b6ed4);
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.modal-body button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .checkout-summary {
+        text-align: center;
+    }
+    .modal-dialog-box {
+        width: 90%;
+    }
+}
